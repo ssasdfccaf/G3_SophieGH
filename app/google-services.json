@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "30448917803",
+    "project_id": "g3firebasetest",
+    "storage_bucket": "g3firebasetest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30448917803:android:62c9bb1760fa6cb955f96e",
+        "android_client_info": {
+          "package_name": "com.example.firebasetest.g3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwl1rRqHxDXx9YIhlvMsSbiMEj_cP_Qg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

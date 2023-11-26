@@ -1,11 +1,13 @@
 package com.example.firebasetest.g3.Auth
 
 //import androidx.navigation.fragment.NavHostFragment
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.firebasetest.g3.databinding.ActivityAuthBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
@@ -25,11 +27,12 @@ class AuthActivity : AppCompatActivity() {
 
         // to 회원가입 창
         binding.signupOKBtn.setOnClickListener {
-            createAccount(binding.signupEmailEt.text.toString(), binding.signupPasswordEt.text.toString())
+            createAccount(binding.EmailEt.text.toString(), binding.PasswordEt.text.toString())
         }
 
         // 로그인 버튼
         binding.loginBtn.setOnClickListener {
+            signIn(binding.EmailEt.text.toString(),binding.PasswordEt.text.toString())
         }
 
         // 인플레이트
@@ -65,6 +68,40 @@ class AuthActivity : AppCompatActivity() {
                         ).show()
                     }
                 }
+        }
+    }
+
+    // 로그인
+    private fun signIn(email: String, password: String) {
+
+        if (email.isNotEmpty() && password.isNotEmpty()) {
+            auth?.signInWithEmailAndPassword(email, password)
+                ?.addOnCompleteListener(this) {
+                    task ->
+                    if (task.isSuccessful) {
+                        Toast.makeText(
+                            baseContext, "로그인 성공",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        moveMainPage(auth?.currentUser)
+
+                    } else {
+                        Toast.makeText(
+                            baseContext, "로그인 실패",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
+        }
+
+
+    }
+
+    // 유저 정보 넘겨준 뒤, 메인 액티비티 호출
+    fun moveMainPage(user: FirebaseUser?){
+        if(user!= null){
+            startActivity(Intent(this,AuthActivity::class.java))
+            finish()
         }
     }
 }

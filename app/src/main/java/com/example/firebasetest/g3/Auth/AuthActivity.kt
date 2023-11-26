@@ -64,8 +64,12 @@ class AuthActivity : AppCompatActivity() {
                             Toast.LENGTH_SHORT
                         ).show()
                     }
+
                 }
+
         }
+
     }
+
 }
 

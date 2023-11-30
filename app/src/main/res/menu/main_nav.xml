@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 네비게이션 메뉴 등록 해야함 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/homeFragment"
+            android:title="홈화면"
+            android:icon="@drawable/home_icon"
+            android:iconTint="#ffffff"
+    />
+
+    <item
+            android:id="@+id/boardsFragment"
+            android:title="보드목록"
+            android:icon="@drawable/clipboard_task_list_ltr"
+            android:iconTint="#ffffff"
+    />
+
+    <item
+            android:id="@+id/dashboardFragment"
+            android:title="대시보드"
+            android:icon="@drawable/histogram_icon"
+            android:iconTint="#ffffff"
+    />
+
+    <item
+            android:id="@+id/profileFragment"
+            android:title="개인페이지"
+            android:icon="@drawable/person_icon"
+            android:iconTint="#ffffff"
+    />
+
+</menu>

@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.androidscaffolding.R
-import com.example.androidscaffolding.databinding.FragmentHomeBinding
+import com.example.firebasetest.g3.R
+import com.example.firebasetest.g3.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
     private var mBinding : FragmentHomeBinding? = null

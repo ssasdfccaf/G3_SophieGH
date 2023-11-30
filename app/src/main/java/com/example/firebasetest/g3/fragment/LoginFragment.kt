@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.androidscaffolding.R
+import com.example.firebasetest.g3.R
 
 
 class LoginFragment : Fragment() {

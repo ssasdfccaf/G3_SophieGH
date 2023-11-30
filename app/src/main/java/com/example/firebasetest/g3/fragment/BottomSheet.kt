@@ -5,8 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.androidscaffolding.R
-import com.example.androidscaffolding.databinding.FragmentBottomSheetBinding
+import com.example.firebasetest.g3.R
+import com.example.firebasetest.g3.databinding.FragmentBottomSheetBinding
+
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 

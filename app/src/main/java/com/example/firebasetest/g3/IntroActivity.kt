@@ -4,7 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.example.androidscaffolding.R
+
+import com.example.firebasetest.g3.R
+import com.example.firebasetest.g3.Main.MainActivity
+
 
 class IntroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

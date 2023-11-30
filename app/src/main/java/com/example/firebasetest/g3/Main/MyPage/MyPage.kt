@@ -1,18 +1,12 @@
 package com.example.androidscaffolding.ui.Main.MyPage
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
-import android.widget.Toast
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.androidscaffolding.R
-import com.example.androidscaffolding.databinding.ActivityMyPageBinding
-import com.example.androidscaffolding.ui.Main.MainActivity
-import com.example.androidscaffolding.ui.Main.MyPage.adapter.Adapter
 import com.example.androidscaffolding.ui.Main.MyPage.adapter.DbTestActivity
+import com.example.firebasetest.g3.databinding.ActivityMyPageBinding
+import com.example.firebasetest.g3.Main.MyPage.adapter.DbTestActivity
+import com.example.firebasetest.g3.Main.MainActivity
 
 class MyPage : AppCompatActivity() {
     lateinit var binding : ActivityMyPageBinding
@@ -24,7 +18,7 @@ class MyPage : AppCompatActivity() {
 
         // 버튼 클릭 시 :  ?? 이동
         binding.textview9.setOnClickListener {
-            val intent = Intent(this@MyPage,MainActivity::class.java)
+            val intent = Intent(this@MyPage, MainActivity::class.java)
             startActivity(intent)
         }
 

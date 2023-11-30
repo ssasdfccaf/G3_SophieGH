@@ -5,7 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.androidscaffolding.databinding.ItemRecyclerBinding
+import com.example.firebasetest.g3.databinding.ItemRecyclerBinding
 
 class ViewHolder (val binding: ItemRecyclerBinding) : RecyclerView.ViewHolder(binding.root)
 

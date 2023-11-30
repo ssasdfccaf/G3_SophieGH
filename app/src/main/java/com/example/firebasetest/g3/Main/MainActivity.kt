@@ -1,14 +1,15 @@
-package com.example.androidscaffolding.ui.Main
+package com.example.firebasetest.g3.Main
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.NavigationUI
 import com.example.androidscaffolding.R
 import com.example.androidscaffolding.databinding.ActivityMainBinding
 import com.example.androidscaffolding.ui.Auth.fragment.LocalTodoFragment
+import com.example.firebasetest.g3.fragment.BoardsFragment
+import com.example.firebasetest.g3.fragment.DashBoardFragment
+import com.example.firebasetest.g3.fragment.ProfileFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

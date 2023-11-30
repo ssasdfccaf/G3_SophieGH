@@ -5,9 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.androidscaffolding.R
-import com.example.androidscaffolding.databinding.FragmentBoardsBinding
-import com.example.androidscaffolding.databinding.FragmentDashBoardBinding
+import com.example.firebasetest.g3.R
+import com.example.firebasetest.g3.databinding.FragmentBoardsBinding
+import com.example.firebasetest.g3.databinding.FragmentDashBoardBinding
+
 
 class DashBoardFragment : Fragment() {
 

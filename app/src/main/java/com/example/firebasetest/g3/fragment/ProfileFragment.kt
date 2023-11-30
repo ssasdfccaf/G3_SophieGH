@@ -6,9 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.androidscaffolding.databinding.FragmentProfileBinding
-import com.example.androidscaffolding.ui.Main.MainActivity
 import com.example.androidscaffolding.ui.Main.MyPage.adapter.DbTestActivity
+import com.example.firebasetest.g3.databinding.FragmentProfileBinding
+import com.example.firebasetest.g3.Main.MyPage.adapter.DbTestActivity
+import com.example.firebasetest.g3.Main.MainActivity
 
 class ProfileFragment : Fragment() {
 

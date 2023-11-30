@@ -7,7 +7,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.androidscaffolding.databinding.ActivityDbTestBinding
+import com.example.firebasetest.g3.databinding.ActivityDbTestBinding
 
 class DbTestActivity : AppCompatActivity() {
     // 전역으로 선언만 했지, 할당을 안했음.

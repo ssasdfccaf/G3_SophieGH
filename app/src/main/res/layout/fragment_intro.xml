@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/introFragment"
+    tools:context=".ui.Auth.fragment.IntroFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/supabase_logo_icon"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUPANOTE"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/todoStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작하고 생산성 향상하기"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:drawableEnd="@drawable/double_arrow"
+        />
+
+</FrameLayout>

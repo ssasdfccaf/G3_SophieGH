@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Auth.AuthActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Task List"
+            android:layout_marginTop="100dp"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="300dp"
+            android:layout_height="310dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="96dp"
+            android:background="@drawable/layout_background"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="할일 목록"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"/>
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/newTaskBtn"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                app:icon="@drawable/baseline_create_24"
+                android:layout_gravity="end|top"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/taskrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/layout_background"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="로그인 하고 더 많은 기능을 이용해 보세요"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="로그인"/>
+        <Button
+            android:id="@+id/joinBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"/>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

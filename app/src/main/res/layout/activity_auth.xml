@@ -66,14 +66,13 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="229dp"
                     android:src="@drawable/ic_launcher_foreground" />
 
                 <RelativeLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
                     android:id="@+id/statelayer"
                     android:layout_width="match_parent"
-                    android:layout_height="56dp"
+                    android:layout_height="39dp"
                     android:background="@drawable/statelayer">
 
                     <EditText
@@ -81,9 +80,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="  이메일  E-MAIL"
-                        android:textStyle="bold"
                         android:inputType="textEmailAddress"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
@@ -128,11 +127,11 @@
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="33dp"
                     android:layout_marginTop="3dp"
-                    android:textSize="10sp"
                     android:text="다른 방법으로 로그인"
-                    />
+                    android:textStyle="bold"
+                    android:textSize="10sp" />
 
                 <View
                     android:layout_width="match_parent"
@@ -144,12 +143,12 @@
                     android:id="@+id/tv_naver_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:background="#2DB400"
                     android:padding="20dp"
-                    android:layout_marginTop="20dp"
                     android:text="N"
-                    android:textSize="30sp"
                     android:textColor="#FFFFFF"
+                    android:textSize="30sp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toLeftOf="@+id/tv_naver_logout"
                     app:layout_constraintTop_toTopOf="parent" />

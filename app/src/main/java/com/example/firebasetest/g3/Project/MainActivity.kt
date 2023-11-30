@@ -1,22 +1,22 @@
-package com.example.firebasetest.g3.Main
+package com.example.firebasetest.g3.Project
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.androidscaffolding.R
-import com.example.androidscaffolding.databinding.ActivityMainBinding
 import com.example.androidscaffolding.ui.Auth.fragment.LocalTodoFragment
-import com.example.firebasetest.g3.fragment.BoardsFragment
-import com.example.firebasetest.g3.fragment.DashBoardFragment
-import com.example.firebasetest.g3.fragment.ProfileFragment
+import com.example.firebasetest.g3.R
+import com.example.firebasetest.g3.databinding.ActivityMainBinding
+import com.example.firebasetest.g3.Project.BoardsFragment
+import com.example.firebasetest.g3.Project.DashBoardFragment
+import com.example.firebasetest.g3.Project.ProfileFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var mainBinding:ActivityMainBinding
+    private lateinit var mainBinding: ActivityMainBinding
     lateinit var localTodoFragment : Fragment
     lateinit var boardsFragment : Fragment
     lateinit var dashBoardFragment : Fragment

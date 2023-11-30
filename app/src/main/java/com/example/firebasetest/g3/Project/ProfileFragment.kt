@@ -1,4 +1,4 @@
-package com.example.firebasetest.g3.fragment
+package com.example.firebasetest.g3.Project
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,8 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.androidscaffolding.ui.Main.MyPage.adapter.DbTestActivity
 import com.example.firebasetest.g3.databinding.FragmentProfileBinding
-import com.example.firebasetest.g3.Main.MyPage.adapter.DbTestActivity
-import com.example.firebasetest.g3.Main.MainActivity
 
 class ProfileFragment : Fragment() {
 

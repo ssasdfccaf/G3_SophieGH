@@ -1,21 +1,14 @@
-package com.example.firebasetest.g3.fragment
+package com.example.firebasetest.g3.Project
 
 import android.os.Bundle
-import android.telecom.Call
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.firebasetest.g3.R
+import com.example.androidscaffolding.ui.Main.MyPage.Network.Boards
 import com.example.androidscaffolding.ui.Main.MyPage.Network.MyApplication
 import com.example.firebasetest.g3.databinding.FragmentBBSBinding
-import com.example.firebasetest.g3.Main.MyPage.Network.Boards
-import com.example.firebasetest.g3.Main.MyPage.Network.MyApplication
-import com.google.android.gms.common.api.Response
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 import retrofit2.Call

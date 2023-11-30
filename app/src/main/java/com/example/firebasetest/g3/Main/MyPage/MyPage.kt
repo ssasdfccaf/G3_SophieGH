@@ -5,8 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.androidscaffolding.ui.Main.MyPage.adapter.DbTestActivity
 import com.example.firebasetest.g3.databinding.ActivityMyPageBinding
-import com.example.firebasetest.g3.Main.MyPage.adapter.DbTestActivity
-import com.example.firebasetest.g3.Main.MainActivity
+import com.example.firebasetest.g3.Project.MainActivity
 
 class MyPage : AppCompatActivity() {
     lateinit var binding : ActivityMyPageBinding

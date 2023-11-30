@@ -1,11 +1,10 @@
-package com.example.firebasetest.g3.fragment
+package com.example.firebasetest.g3.Project
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.firebasetest.g3.R
 import com.example.firebasetest.g3.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {

@@ -5,11 +5,10 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-
-import com.example.firebasetest.g3.ui.Main.MyPage.Network.MyApplication
+import com.example.androidscaffolding.ui.Main.MyPage.Network.MyApplication
 import com.example.firebasetest.g3.R
 import com.example.firebasetest.g3.databinding.ActivityLoginAuthBinding
-import com.example.firebasetest.g3.fragment.BoardsFragment
+import com.example.firebasetest.g3.Project.BoardsFragment
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException

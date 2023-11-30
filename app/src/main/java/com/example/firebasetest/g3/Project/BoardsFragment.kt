@@ -1,4 +1,4 @@
-package com.example.firebasetest.g3.fragment
+package com.example.firebasetest.g3.Project
 
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences

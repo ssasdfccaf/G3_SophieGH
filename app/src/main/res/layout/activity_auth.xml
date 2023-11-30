@@ -9,18 +9,18 @@
     android:orientation="vertical"
     android:weightSum="1"
     android:layout_gravity="center_vertical"
-    tools:context="Auth.AuthActivity">
+    tools:context=".ui.Auth.AuthActivity">
 
 
+    <!--    <androidx.fragment.app.FragmentContainerView-->
+    <!--        android:id="@+id/auth_nav_host"-->
+    <!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_weight="1"-->
+    <!--        app:defaultNavHost="true"-->
+    <!--        app:navGraph="@navigation/nav_auth"/>-->
 
-<!--    <androidx.fragment.app.FragmentContainerView-->
-<!--        android:id="@+id/auth_nav_host"-->
-<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_weight="1"-->
-<!--        app:defaultNavHost="true"-->
-<!--        app:navGraph="@navigation/nav_auth"/>-->
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -44,7 +44,6 @@
                 android:layout_height="wrap_content"
                 android:background="@color/black">
 
-
                 <TextView
                     android:id="@+id/toolbar_title"
                     style="@style/Animation.Design.BottomSheetDialog"
@@ -54,7 +53,6 @@
                     android:text="Firebase Test"
                     android:textColor="@color/white"
                     android:textSize="21sp" />
-
 
             </androidx.appcompat.widget.Toolbar>
 
@@ -66,35 +64,75 @@
                 android:padding="16dp"
                 tools:context=".MainActivity">
 
-
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="200dp"
                     android:src="@drawable/ic_launcher_foreground" />
 
-
-                <EditText
-                    android:id="@+id/EmailEt"
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/statelayer"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="이메일 E-MAIL"
-                    android:textStyle="bold"
-                    android:inputType="textEmailAddress"
-                    android:textSize="15sp"/>
+                    android:layout_height="56dp"
+                    android:background="@drawable/statelayer">
+
+                    <EditText
+                        android:id="@+id/EmailEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="  이메일  E-MAIL"
+                        android:textStyle="bold"
+                        android:inputType="textEmailAddress"
+                        android:textSize="15sp"/>
+
+                </RelativeLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="1dp" />
 
-                <EditText
-                    android:id="@+id/PasswordEt"
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/textfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/textfield">
+
+                    <EditText
+                        android:id="@+id/PasswordEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="  비밀번호  PASSWORD"
+                        android:textStyle="bold"
+                        android:inputType="textPassword"
+                        android:textSize="15sp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="1dp" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="비밀번호 PASSWORD"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#56000000"
+                    android:textSize="8sp"
                     android:textStyle="bold"
-                    android:inputType="textPassword"
-                    android:textSize="15sp"/>
+                    android:text="      * Forgot Password?   비밀번호를 잊으셨습니까?"
+                    />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textSize="10sp"
+                    android:text="다른 방법으로 로그인"
+                    />
 
                 <View
                     android:layout_width="match_parent"
@@ -103,37 +141,26 @@
 
 
                 <TextView
+                    android:id="@+id/tv_naver_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:textColor="#56000000"
-                    android:textSize="8sp"
-                    android:textStyle="bold"
-                    android:text="      * Forgot Password?   비밀번호를 잊으셨습니까?"
-                    />
+                    android:background="#2DB400"
+                    android:padding="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="N"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/tv_naver_logout"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip"
+                <ImageButton
+                    android:id="@+id/fragment_login"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:textSize="10sp"
-                    android:text="다른 방법으로 로그인 - 이 칩 아래 부분에 소셜 로그인 구현 예정"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/ic_launcher_foreground"
                     />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="10dp" />
-
-
-<!--                <Button-->
-<!--                    android:id="@+id/fragment_login"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="45dp"-->
-<!--                    android:layout_marginTop="16dp"-->
-<!--                    android:text="로그인" />-->
 
                 <Button
                     android:id="@+id/loginBtn"
@@ -142,18 +169,27 @@
                     android:layout_marginTop="16dp"
                     android:text="로그인" />
 
+                <!--                <Button-->
+                <!--                    android:id="@+id/logoutBtn"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="45dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
+                <!--                    android:text="로그아웃" />-->
+
+
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="-10dp"
+                    android:layout_height="-50dp"
                     android:layout_marginTop="1dp" />
 
-<!--                <Button-->
-<!--                    android:id="@+id/fragment_register"-->
-<!--                    android:backgroundTint="@color/M3_sys_lighton_surface_variant"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="45dp"-->
-<!--                    android:layout_marginTop="16dp"-->
-<!--                    android:text="회원가입" />-->
+                <!--                <Button-->
+                <!--                    android:id="@+id/fragment_register"-->
+                <!--                    android:backgroundTint="@color/M3_sys_lighton_surface_variant"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="45dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
+                <!--                    android:text="회원가입" />-->
+
 
                 <Button
                     android:id="@+id/signupOKBtn"
@@ -180,11 +216,11 @@
 
             </LinearLayout>
 
+
         </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </LinearLayout>

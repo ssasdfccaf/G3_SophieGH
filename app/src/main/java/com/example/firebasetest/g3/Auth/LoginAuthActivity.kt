@@ -6,9 +6,9 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidscaffolding.ui.Main.MyPage.Network.MyApplication
+import com.example.firebasetest.g3.Project.BoardsFragment
 import com.example.firebasetest.g3.R
 import com.example.firebasetest.g3.databinding.ActivityLoginAuthBinding
-import com.example.firebasetest.g3.Project.BoardsFragment
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
@@ -73,7 +73,7 @@ class LoginAuthActivity : AppCompatActivity() {
         // 구글 로그인
         binding.googleAuthBtn.setOnClickListener {
             // 샘플 코드
-            // 옵션, 이메일, 아이디토큰 가져오는 옵션
+            // 옵션, 이메일, 아이디 토큰 가져오는 옵션
             val gso = GoogleSignInOptions
                 // 오타, DEFAULT_SIGN_IN 인데 여기서 게임으로 잘못 잡혔음.
                 .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)

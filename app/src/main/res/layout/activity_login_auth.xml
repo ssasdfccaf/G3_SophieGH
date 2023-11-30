@@ -96,14 +96,54 @@
                         android:text="      * Forgot Password?   비밀번호를 잊으셨습니까?"
                         />
 
+
+                    <Button
+                        android:id="@+id/loginBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        android:text="로그인" />
+
+                    <!--                <Button-->
+                    <!--                    android:id="@+id/logoutBtn"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="45dp"-->
+                    <!--                    android:layout_marginTop="16dp"-->
+                    <!--                    android:text="로그아웃" />-->
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="-50dp"
+                        android:layout_marginTop="-15dp" />
+
+                    <!--                <Button-->
+                    <!--                    android:id="@+id/fragment_register"-->
+                    <!--                    android:backgroundTint="@color/M3_sys_lighton_surface_variant"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="45dp"-->
+                    <!--                    android:layout_marginTop="16dp"-->
+                    <!--                    android:text="회원가입" />-->
+
+                    <Button
+                        android:id="@+id/googleLogoutBtn"
+                        android:backgroundTint="#4D000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        android:text="로그아웃" />
+
+
+
                     <com.google.android.material.chip.Chip
                         android:id="@+id/chip"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_marginTop="3dp"
-                        android:textSize="10sp"
+                        android:textColor="@color/M3_sys_lighton_surface_variant"
+                        android:textStyle="bold"
                         android:text="다른 방법으로 로그인"
-                        />
+                        android:textSize="10sp" />
 
 
 <LinearLayout
@@ -113,16 +153,25 @@
 
     <ImageView
         android:id="@+id/naverAuthBtn"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/naver"/>
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/naver" />
+
+    <ImageView
+        android:id="@+id/kakaoAuthBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/kakao" />
 
     <ImageView
         android:id="@+id/googleAuthBtn"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="30dp"
-        android:src="@drawable/google"/>
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/google" />
+
+
 
 </LinearLayout>
 
@@ -152,41 +201,6 @@
 <!--                        />-->
 
                     <Button
-                        android:id="@+id/loginBtn"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="16dp"
-                        android:text="로그인" />
-
-                    <!--                <Button-->
-                    <!--                    android:id="@+id/logoutBtn"-->
-                    <!--                    android:layout_width="match_parent"-->
-                    <!--                    android:layout_height="45dp"-->
-                    <!--                    android:layout_marginTop="16dp"-->
-                    <!--                    android:text="로그아웃" />-->
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="-50dp"
-                        android:layout_marginTop="1dp" />
-
-                    <!--                <Button-->
-                    <!--                    android:id="@+id/fragment_register"-->
-                    <!--                    android:backgroundTint="@color/M3_sys_lighton_surface_variant"-->
-                    <!--                    android:layout_width="match_parent"-->
-                    <!--                    android:layout_height="45dp"-->
-                    <!--                    android:layout_marginTop="16dp"-->
-                    <!--                    android:text="회원가입" />-->
-
-                    <Button
-                        android:id="@+id/googleLogoutBtn"
-                        android:backgroundTint="@color/M3_sys_lighton_surface_variant"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="16dp"
-                        android:text="구글 로그아웃 테스트" />
-                    <Button
                         android:id="@+id/signupOKBtn"
                         android:backgroundTint="@color/M3_sys_lighton_surface_variant"
                         android:layout_width="match_parent"
@@ -206,7 +220,6 @@
                     <!--                android:text="회원가입"-->
                     <!--                android:="@style/resisterBtn"-->
                     <!--                android:gravity="center_horizontal|top" />-->
-
 
 
                 </LinearLayout>

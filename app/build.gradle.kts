@@ -37,7 +37,6 @@ android {
         jvmTarget = "1.8"
     }
 
-    // 뷰 바인딩을 사용한다고 설정
     buildFeatures {
         viewBinding = true
         dataBinding = true
@@ -117,7 +116,6 @@ dependencies {
     // json 변환을 위한 또라이브러리, 예시 - gson
     implementation ("com.google.code.gson:gson:2.8.9")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-
 
 
 }

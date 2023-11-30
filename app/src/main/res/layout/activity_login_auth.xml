@@ -7,212 +7,212 @@
     tools:context=".ui.Main.LoginAuthActivity">
 
 
-            <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.Auth.AuthActivity">
+
+
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/Animation.Design.BottomSheetDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="15"
+                android:text="Firebase Test"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:context=".MainActivity">
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                tools:context=".ui.Auth.AuthActivity">
+                android:layout_height="200dp"
+                android:src="@drawable/ic_launcher_foreground" />
 
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/statelayer"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/statelayer">
 
-                <androidx.appcompat.widget.Toolbar
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/toolbar"
+                <EditText
+                    android:id="@+id/EmailEt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/black">
+                    android:hint="  이메일  E-MAIL"
+                    android:textStyle="bold"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp"/>
 
-                    <TextView
-                        android:id="@+id/toolbar_title"
-                        style="@style/Animation.Design.BottomSheetDialog"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:maxEms="15"
-                        android:text="Firebase Test"
-                        android:textColor="@color/white"
-                        android:textSize="21sp" />
-
-                </androidx.appcompat.widget.Toolbar>
+            </RelativeLayout>
 
 
-                <LinearLayout
+
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/textfield"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/textfield">
+
+                <EditText
+                    android:id="@+id/PasswordEt"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    tools:context=".MainActivity">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:src="@drawable/ic_launcher_foreground" />
-
-                    <RelativeLayout
-                        xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:id="@+id/statelayer"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:background="@drawable/statelayer">
-
-                        <EditText
-                            android:id="@+id/EmailEt"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="  이메일  E-MAIL"
-                            android:textStyle="bold"
-                            android:inputType="textEmailAddress"
-                            android:textSize="15sp"/>
-
-                    </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:hint="  비밀번호  PASSWORD"
+                    android:textStyle="bold"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
 
 
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textColor="#56000000"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:text="      * Forgot Password?   비밀번호를 잊으셨습니까?"
+                />
 
-                    <RelativeLayout
-                        xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:id="@+id/textfield"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:background="@drawable/textfield">
-
-                        <EditText
-                            android:id="@+id/PasswordEt"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="  비밀번호  PASSWORD"
-                            android:textStyle="bold"
-                            android:inputType="textPassword"
-                            android:textSize="15sp"/>
-                    </RelativeLayout>
-
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="1dp"
-                        android:textColor="#56000000"
-                        android:textSize="8sp"
-                        android:textStyle="bold"
-                        android:text="      * Forgot Password?   비밀번호를 잊으셨습니까?"
-                        />
-
-                    <com.google.android.material.chip.Chip
-                        android:id="@+id/chip"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:textSize="10sp"
-                        android:text="다른 방법으로 로그인"
-                        />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="10sp"
+                android:text="다른 방법으로 로그인"
+                />
 
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/naverAuthBtn"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/naver"/>
+                <ImageView
+                    android:id="@+id/naverAuthBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/naver"/>
 
-    <ImageView
-        android:id="@+id/googleAuthBtn"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="30dp"
-        android:src="@drawable/google"/>
-
-</LinearLayout>
-
-
-
-<!--                    <TextView-->
-<!--                        android:id="@+id/tv_naver_login"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:background="#2DB400"-->
-<!--                        android:padding="20dp"-->
-<!--                        android:layout_marginTop="20dp"-->
-<!--                        android:text="N"-->
-<!--                        android:textSize="30sp"-->
-<!--                        android:textColor="#FFFFFF"-->
-<!--                        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--                        app:layout_constraintRight_toLeftOf="@+id/tv_naver_logout"-->
-<!--                        app:layout_constraintTop_toTopOf="parent" />-->
-
-
-<!--                    <ImageButton-->
-<!--                        android:id="@+id/fragment_login"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="50dp"-->
-<!--                        android:layout_marginTop="1dp"-->
-<!--                        android:src="@drawable/ic_launcher_foreground"-->
-<!--                        />-->
-
-                    <Button
-                        android:id="@+id/loginBtn"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="16dp"
-                        android:text="로그인" />
-
-                    <!--                <Button-->
-                    <!--                    android:id="@+id/logoutBtn"-->
-                    <!--                    android:layout_width="match_parent"-->
-                    <!--                    android:layout_height="45dp"-->
-                    <!--                    android:layout_marginTop="16dp"-->
-                    <!--                    android:text="로그아웃" />-->
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="-50dp"
-                        android:layout_marginTop="1dp" />
-
-                    <!--                <Button-->
-                    <!--                    android:id="@+id/fragment_register"-->
-                    <!--                    android:backgroundTint="@color/M3_sys_lighton_surface_variant"-->
-                    <!--                    android:layout_width="match_parent"-->
-                    <!--                    android:layout_height="45dp"-->
-                    <!--                    android:layout_marginTop="16dp"-->
-                    <!--                    android:text="회원가입" />-->
-
-                    <Button
-                        android:id="@+id/googleLogoutBtn"
-                        android:backgroundTint="@color/M3_sys_lighton_surface_variant"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="16dp"
-                        android:text="구글 로그아웃 테스트" />
-                    <Button
-                        android:id="@+id/signupOKBtn"
-                        android:backgroundTint="@color/M3_sys_lighton_surface_variant"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="16dp"
-                        android:text="회원가입" />
-
-
-                    <!--            <TextView-->
-                    <!--                android:id="@+id/resisterBtn"-->
-                    <!--                android:layout_width="300dp"-->
-                    <!--                android:layout_height="18dp"-->
-                    <!--                android:layout_alignParentLeft="true"-->
-                    <!--                android:layout_marginLeft="26dp"-->
-                    <!--                android:layout_alignParentTop="true"-->
-                    <!--                android:layout_marginTop="665dp"-->
-                    <!--                android:text="회원가입"-->
-                    <!--                android:="@style/resisterBtn"-->
-                    <!--                android:gravity="center_horizontal|top" />-->
-
-
-
-                </LinearLayout>
-
+                <ImageView
+                    android:id="@+id/googleAuthBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/google"/>
 
             </LinearLayout>
+
+
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/tv_naver_login"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:background="#2DB400"-->
+            <!--                        android:padding="20dp"-->
+            <!--                        android:layout_marginTop="20dp"-->
+            <!--                        android:text="N"-->
+            <!--                        android:textSize="30sp"-->
+            <!--                        android:textColor="#FFFFFF"-->
+            <!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--                        app:layout_constraintRight_toLeftOf="@+id/tv_naver_logout"-->
+            <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+            <!--                    <ImageButton-->
+            <!--                        android:id="@+id/fragment_login"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_marginTop="1dp"-->
+            <!--                        android:src="@drawable/ic_launcher_foreground"-->
+            <!--                        />-->
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:text="로그인" />
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/logoutBtn"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:text="로그아웃" />-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="-50dp"
+                android:layout_marginTop="1dp" />
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/fragment_register"-->
+            <!--                    android:backgroundTint="@color/M3_sys_lighton_surface_variant"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:text="회원가입" />-->
+
+            <Button
+                android:id="@+id/googleLogoutBtn"
+                android:backgroundTint="@color/M3_sys_lighton_surface_variant"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:text="구글 로그아웃 테스트" />
+            <Button
+                android:id="@+id/signupOKBtn"
+                android:backgroundTint="@color/M3_sys_lighton_surface_variant"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:text="회원가입" />
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/resisterBtn"-->
+            <!--                android:layout_width="300dp"-->
+            <!--                android:layout_height="18dp"-->
+            <!--                android:layout_alignParentLeft="true"-->
+            <!--                android:layout_marginLeft="26dp"-->
+            <!--                android:layout_alignParentTop="true"-->
+            <!--                android:layout_marginTop="665dp"-->
+            <!--                android:text="회원가입"-->
+            <!--                android:="@style/resisterBtn"-->
+            <!--                android:gravity="center_horizontal|top" />-->
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
